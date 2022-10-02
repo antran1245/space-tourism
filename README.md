@@ -37,5 +37,10 @@ or
 - HTML
 - CSS
 
-### Library
-- React.js
+### Library/Frameworks
+- React
+- React-Bootstrap
+
+## Features
+- Toggles information display
+- Navigation between pages
