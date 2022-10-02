@@ -1,0 +1,21 @@
+#home {
+    // Default image be the desktop image
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+// Phone size
+@media only screen and (max-width: 600px) {
+    #home {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+    }
+}
+
+// Tablet size
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #home {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+}
