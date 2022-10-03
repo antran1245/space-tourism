@@ -35,11 +35,16 @@
                 color: white;
                 width: auto;
                 letter-spacing: 2.7px;
-                line-height: 19px;
+                line-height: 96px;
+                text-align: center;
+                height: 96px;
+                padding: 0;
             }
-            .open {
-                color: red !important;
-                animation: open .5s ease-in forwards;
+            a.active {
+                border-bottom: 3px solid #FFFFFF;
+            }
+            a:hover {
+                border-bottom: 3px solid #979797;
             }
         }
     }
