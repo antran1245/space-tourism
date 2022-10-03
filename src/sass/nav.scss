@@ -1,0 +1,121 @@
+#navigation {
+    position: absolute;
+    top: 35px;
+    min-width: 100vw;
+    .container-fluid {
+        .navbar-brand {
+            margin-left: 55px;
+        }
+        #hamburger {
+            cursor: pointer;
+        }
+        #responsive-nav {
+            position: relative;
+            #line-bar {
+                border-bottom: 1px solid #ffffff;
+                width: 40%;
+                opacity: 0.25;
+                z-index: 2;
+                margin-right: -50px;
+            }
+            .navbar-nav {
+                background-color: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(40.7742px);
+                width: 60%;
+                min-height: 96px;
+                padding: 0 7%;
+            }
+            span {
+                font-weight: 700;
+                margin-right: 14px;
+            }
+            a {
+                font-family: 'Barlow Condensed', normal;
+                font-size: 16px;
+                color: white;
+                width: auto;
+                letter-spacing: 2.7px;
+                line-height: 19px;
+            }
+            .open {
+                color: red !important;
+                animation: open .5s ease-in forwards;
+            }
+        }
+    }
+}
+
+// Tabel size
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #navigation {
+        top: 0;
+        padding: 0;
+    }
+    .container-fluid {
+        .navbar-nav {
+            width: 65% !important;
+        }
+    }
+}
+
+// Tablet and phone
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        .open {
+            animation: open .25s ease-in forwards;
+        }
+        .closed {
+            animation: closed .25s ease-out forwards;
+        }
+        #responsive-nav {
+            .navbar-nav {
+                width: 100% !important;
+            }
+        }
+    }
+}
+// Phone size
+@media only screen and (max-width: 600px) {
+    #navigation {
+        top: 0;
+        padding: 0;
+    }
+    .container-fluid {
+        .navbar-nav {
+            width: 100% !important;
+        }
+    }
+}
+
+// Remove numbers from navbar
+@media only screen and (max-width: 1210px) {
+    .container-fluid {
+        #responsive-nav {
+            span {
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Menu
+@keyframes open {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes closed {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
