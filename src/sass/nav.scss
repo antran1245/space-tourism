@@ -1,7 +1,8 @@
 #navigation {
     position: absolute;
     top: 35px;
-    min-width: 100vw;
+    z-index: 2;
+    min-width: 100%;
     .container-fluid {
         .navbar-brand {
             margin-left: 55px;
@@ -15,8 +16,8 @@
                 border-bottom: 1px solid #ffffff;
                 width: 40%;
                 opacity: 0.25;
-                z-index: 2;
                 margin-right: -50px;
+                z-index: 3;
             }
             .navbar-nav {
                 background-color: rgba(255, 255, 255, 0.04);
