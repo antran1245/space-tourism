@@ -44,3 +44,11 @@ or
 ## Features
 - Toggles information display
 - Navigation between pages
+
+## Challenges
+- dynamically adding images from json file into img tags src.
+    - Example: `"./assets/destination/image-moon.png"`
+    - created a separate array just for the images
+    - slice the images path name to only include the image file name
+        - ['/image-moon.png', ... ]
+    - `src={require(PATH + IMAGE Name)}` PATH = the path to the image
