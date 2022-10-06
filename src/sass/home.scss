@@ -4,13 +4,14 @@
     background-size: 100% 100%;
     min-height: 100vh;
     height: 900px;
+    width: 100%;
     position: absolute;
     display: flex;
     font-family: 'Barlow Condensed';
     .content {
         position: absolute;
         top: 387px;
-        width: 100%;
+        min-width: 100%;
     }
     .headText, .info, h1 {
         color: #D0D6F9;
@@ -79,6 +80,9 @@
     #home {
         background: url('../assets/home/background-home-tablet.jpg') no-repeat;
         background-size: 100% 100%;
+        .headText {
+            font-size: 20px;
+        }
     }
 }
 @media only screen and (max-width: 992px) {
@@ -93,7 +97,7 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                margin-top: 50px;
+                margin-top: 40px;
             }
             .info {
                 font-size: 16px;
@@ -102,6 +106,7 @@
         .circleExplore {
             height: 242px;
             width: 242px;
+            margin-top: 50px;
         }
     }
 }

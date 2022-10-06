@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Container, Nav, Navbar} from 'react-bootstrap'
-import logo from '../assets/shared/logo.svg'
+import { Link } from 'react-router-dom'
 import hamburgerIcon from '../assets/shared/icon-hamburger.svg'
+import logo from '../assets/shared/logo.svg'
 import '../sass/nav.scss'
 
 export default function Navigation() {
@@ -18,10 +19,10 @@ export default function Navigation() {
                 <Navbar.Collapse id="responsive-nav" className={`navLink justify-content-end mt-2 mt-md-0 ${show? 'show open': ''} ${show? '': 'show closed'}`}>
                     <div id='line-bar' className='d-none d-lg-inline'/>
                     <Nav className='d-flex justify-content-around align-items-center'>
-                        <Nav.Link href="" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Nav.Link>
-                        <Nav.Link href="" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Nav.Link>
-                        <Nav.Link href="" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Nav.Link>
-                        <Nav.Link href="" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Nav.Link>
+                        <Link to="/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
+                        <Link to="/destination" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Link>
+                        <Link href="" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Link>
+                        <Link href="" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
