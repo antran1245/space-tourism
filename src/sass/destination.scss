@@ -9,6 +9,7 @@
     .content {
         position: absolute;
         top: 212px;
+        min-width: 100%;
         .headText {
             font-family: 'Barlow Condensed', normal;
             font-size: 28px;
@@ -19,6 +20,50 @@
             span {
                 font-weight: 700;
                 opacity: .25;
+            }
+        }
+        .content-info {
+            font-weight: 400;
+            color: #FFFFFF;
+            .row {
+                display: flex;
+                justify-content: center;
+                .col-lg-4 {
+                    text-align: start;
+                }
+            }
+            .tabs {
+                letter-spacing: 2.7px;
+                font-size: 16px;
+                line-height: 19.2px;
+                p {
+                    margin-right: 30px;
+                }
+            }
+            p  {
+                text-align: start;
+            }
+            h1 {
+                font-family: 'Bellefair', 'normal';
+                font-size: 100px;
+                line-height: 114.6px;
+            }
+            .description {
+                color: #D0D6F9;
+                font-family: 'Barlow', 'normal';
+                font-size: 18px;
+                line-height: 32px;
+            }
+            .distance-text, .travel-text {
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 2.3625px;
+                color: #D0D6F9;
+            }
+            .distance, .travel {
+                font-family: 'Bellefair',  'normal';
+                font-size: 28px;
+                line-height: 32px;
             }
         }
     }
