@@ -5,13 +5,12 @@
     width: 100%;
     height: 900px;
     position: absolute;
-    font-family: 'Barlow Condensed';
+    font-family: 'Barlow Condensed', normal;
     .content {
         position: absolute;
         top: 212px;
         min-width: 100%;
         .headText {
-            font-family: 'Barlow Condensed', normal;
             font-size: 28px;
             font-weight: 400;
             letter-spacing: 4.725px;

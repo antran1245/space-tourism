@@ -3,4 +3,22 @@
     background-size: 100% 100%;
     min-height: 100vh;
     height: 900px;
+    width: 100%;
+    font-family: 'Barlow Condensed', 'normal';
+    color: #FFFFFF;
+    .content {
+        position: absolute;
+        top: 212px;
+        min-width: 100%;
+        font-weight: 400px;
+        .headText {
+            font-size: 28px;
+            line-height: 33.6px;
+            letter-spacing: 4.72px;
+            span {
+                font-weight: 700;
+                opacity: .25;
+            }
+        }
+    }
 }

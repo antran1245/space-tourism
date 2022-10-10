@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import data from '../data.json'
 import '../sass/destination.scss'
 
 export default function Destination() {
-    const [destinations, setDestination] = useState(data.destinations)
+    const destinations = data.destinations
     const [location, setLocation] = useState(0)
     // parse the image name with a / at the beginning to deal with webpack error
-    const [images, setImages] = useState(data.destinations.map((item) => item.images.png.slice(item.images.png.lastIndexOf('/'))))
+    const images = data.destinations.map((item) => item.images.png.slice(item.images.png.lastIndexOf('/')))
     return(
         <main id="destination">
             <Container className="content">
