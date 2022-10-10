@@ -10,11 +10,11 @@ export default function Crew() {
             <Container className="content">
                 <Row>
                     <Col xxl={{offset: 1, span: 5}}>
-                        <Row>
-                            <Col>
-                                <p className="headText"><span>02</span> MEET YOUR CREW</p>
-                            </Col>
-                        </Row>
+                        <p className="headText"><span>02</span> MEET YOUR CREW</p>
+                    </Col>
+                </Row>
+                <Row  className="d-flex justify-content-center align-items-center">
+                    <Col xxl={{offset: 1, span: 5}} className="content-info">
                         <Row>
                             <Col>
                                 <p className="title">{crew[0].role.toUpperCase()}</p>
@@ -26,12 +26,22 @@ export default function Crew() {
                             </Col>
                         </Row>
                         <Row>
+                            <Col xxl={7} className="mt-4">
+                                <p className="bio">{crew[0].bio}</p>
+                            </Col>
+                        </Row>
+                        <Row>
                             <Col>
-                                <p>{crew[0].bio}</p>
+                                <div className="tabs">
+                                    <span />
+                                    <span />
+                                    <span />
+                                    <span />
+                                </div>
                             </Col>
                         </Row>
                     </Col>
-                    <Col xxl={6}>
+                    <Col xxl={6} className="image">
                         <img src={require("../assets/crew"+images[0])} alt={crew[0].name} />
                     </Col>
                 </Row>
