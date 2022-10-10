@@ -11,19 +11,19 @@ export default function Destination() {
         <main id="destination">
             <Container className="content">
                 <Row>
-                    <Col xs={12} lg={{offset: 1, span: 3}}>
+                    <Col xs={12} lg={{offset: 1, span: 10}}>
                         <p className="headText"><span>01</span> PICK YOUR DESTINATION</p>
                     </Col>
                 </Row>
 
                 {/* Change in location based on selected destination */}
-                <Row className="d-flex justify-content-center">
-                    <Col lg={{offset: 1, span: 4}} className="d-flex justify-content-center">
+                <Row className="d-flex justify-content-center mt-2 mt-lg-5">
+                    <Col xs={12} lg={{offset: 1, span: 6}} className="d-flex justify-content-center">
                         <img src={require("../assets/destination" + images[0])} alt={destinations[0].name}/>
                     </Col>
                     <Col className="content-info">
                         <Row>
-                            <Col lg={5} className="d-flex">
+                            <Col xs={12} lg={6} className="d-flex mt-4 mt-xxl-0">
                                 <div className="tabs d-flex">
                                     <p>MOON</p>
                                     <p>MARS</p>
@@ -33,23 +33,18 @@ export default function Destination() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={5}>
+                            <Col xs={12} lg={12} className="mt-3">
                                 <h1>{destinations[0].name.toUpperCase()}</h1>
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={5}>
+                            <Col xs={9} md={8} lg={8} xxl={6}>
                                 <p className="description">{destinations[0].description}</p>
                             </Col>
                         </Row>
                         <Row>
-                            <Col lg={5}>
-                                <hr/>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={5} className="d-flex">
-                                <Col>
+                            <Col xs={9} md={8} lg={9} xxl={6} className="distance-travel d-flex align-items-end mt-4 m-xxl-0">
+                                <Col xs={12} sm={6} lg={7} xl={8}>
                                     <Row>
                                         <Col>
                                             <p className="distance-text">AVG. DISTANCE</p>
@@ -61,7 +56,7 @@ export default function Destination() {
                                         </Col>
                                     </Row>
                                 </Col>
-                                <Col>
+                                <Col xs={12} sm={6} lg={7} xl={8}>
                                     <Row>
                                         <Col>
                                             <p className="travel-text">EST. TRAVEL TIME</p>
