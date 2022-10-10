@@ -7,7 +7,20 @@ import '../sass/nav.scss'
 
 export default function Navigation() {
     const [show, setShow] = useState(false)
+    const [classShow, setClassShow] = useState('show closed')
     const [selected, setSelected] = useState(0)
+
+    const showing = () => {
+        if(show) {
+            setShow(false)
+            setTimeout(() => {
+                setClassShow('closed')
+            }, 500)
+        } else {
+            setShow(true)
+            setClassShow('show closed')
+        }
+    }
     return(
         <Navbar collapseOnSelect expand="md" id='navigation'>
             <Container fluid className='d-flex align-items-space pt-4 pt-md-0'>
@@ -15,8 +28,8 @@ export default function Navigation() {
                 <img src={logo} alt="logo icon"/>
                 </Navbar.Brand>
                 <img id='hamburger' className='d-inline d-md-none  me-5' src={hamburgerIcon} alt="hamburger icon"
-                onClick={() => setShow(!show)}/>
-                <Navbar.Collapse id="responsive-nav" className={`navLink justify-content-end mt-2 mt-md-0 ${show? 'show open': ''} ${show? '': 'show closed'}`}>
+                onClick={() => showing()}/>
+                <Navbar.Collapse id="responsive-nav" className={`navLink justify-content-end mt-2 mt-md-0 ${show? 'show open': ''} ${show? '': classShow}`}>
                     <div id='line-bar' className='d-none d-lg-inline'/>
                     <Nav className='d-flex justify-content-around align-items-center'>
                         <Link to="/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
