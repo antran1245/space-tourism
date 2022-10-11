@@ -61,3 +61,71 @@
         }
     }
 }
+
+// phone
+@media only screen and (max-width: 600px) {}
+
+// tablet
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #crew {
+        overflow: hidden;
+        .col-12{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            .headText {
+                font-size: 20px;
+                letter-spacing: 3.38px;
+                line-height: 24px;
+                align-self: flex-start;
+            }
+            .content-info {
+                .title {
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+                    margin-top: 55px;
+                    margin-bottom: 0;
+                }
+                h1 {
+                    font-size: 40px;
+                    line-height: 46px;
+                    margin-bottom: 0;
+                }
+                .bio {
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: center;
+                }
+                .tabs {
+                    margin-top: 0 !important;
+                    span {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            img {
+                width: 400.37px;
+                height: 500px;
+                object-fit: contain;
+                margin-bottom: -20px;
+            }
+        }
+    }
+}
+
+// @media only screen and (max-width: 1280px) {
+//     #crew {
+//         .content {
+//             .content-info {
+//                 .tabs {
+//                     // margin-top: 80px;
+//                 }
+//             }
+//         }
+//     }
+// }
