@@ -7,7 +7,7 @@ import '../sass/nav.scss'
 
 export default function Navigation() {
     const [show, setShow] = useState(false)
-    const [classShow, setClassShow] = useState('show closed')
+    const [classShow, setClassShow] = useState('closed')
     const [selected, setSelected] = useState(0)
 
     const showing = () => {

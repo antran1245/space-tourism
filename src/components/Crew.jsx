@@ -13,7 +13,7 @@ export default function Crew() {
                         <p className="headText"><span>02</span> MEET YOUR CREW</p>
                     </Col>
                 </Row>
-                <Row className="d-flex  align-items-center">
+                <Row className="d-flex align-items-center order-view">
                     <Col xs={12} lg={{offset: 1, span:4}} xl={{offset: 1, span: 5}} className="content-info">
                         <Row>
                             <Col>
@@ -26,12 +26,12 @@ export default function Crew() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={{offset: 3, span: 6}} lg={{offset:0, span: 12}} xl={7} className="mt-sm-4">
+                            <Col xs={{offset: 2, span: 8}} sm={{offset: 3, span: 6}} lg={{offset:0, span: 12}} xl={7} className="mt-sm-4">
                                 <p className="bio">{crew[0].bio}</p>
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="mt-2 mt-lg-4">
+                            <Col xs={12} className="d-flex justify-content-center mt-2 mt-lg-4">
                                 <div className="tabs">
                                     <span />
                                     <span />
@@ -41,7 +41,7 @@ export default function Crew() {
                             </Col>
                         </Row>
                     </Col>
-                    <Col xs={12} lg={{offset: 1, span: 5}} xl={4} className="image d-flex justify-content-center">
+                    <Col xs={{span:8, offset: 0}} lg={{offset: 1, span: 5}} xl={4} className="image d-flex justify-content-center image">
                         <img src={require("../assets/crew"+images[0])} alt={crew[0].name} />
                     </Col>
                 </Row>

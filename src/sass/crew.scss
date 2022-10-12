@@ -63,7 +63,69 @@
 }
 
 // phone
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    #crew {
+        background: url('../assets/crew/background-crew-mobile.jpg') no-repeat center center;
+        background-size: 100% 100%;
+        align-items: flex-start;
+        .content {
+            text-align: center;
+            margin-top: 120px;
+            .headText {
+                margin-top: 0;
+                top: 0;
+                font-size: 20px;
+                line-height: 19.2px;
+                letter-spacing: 2.7px;
+            }
+            .order-view {
+                flex-direction: column-reverse;
+                margin-bottom: 0;
+            }
+            .content-info {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                .row:nth-child(1) { order: 2; }
+                .row:nth-child(2) { order: 3; }
+                .row:nth-child(3) { order: 4; }
+                .row:nth-child(4) { order: 1; }
+                .title {
+                    margin-top: 32px;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                h1 {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .bio {
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-top: 16px;
+                }
+                .tabs {
+                    width: 88px;
+                    margin-top: 32px;
+                    span {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            .image {
+                border-bottom: 1px solid #383B4B;
+                margin-top: 32px;
+            }
+            img {
+                width: 222.12px;
+                height: 300px;
+                margin-bottom: 0;
+                margin-left: 40px;
+            }
+        }
+    }
+}
 
 // tablet
 @media only screen and (min-width: 600px) and (max-width: 992px) {
