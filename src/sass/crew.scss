@@ -23,13 +23,17 @@
                 opacity: .25;
             }
         }
+        // .order-view {
+        //     display: flex;
+        //     align-items: center;
+        //     justify-items: center;
+        // }
         .content-info {
             .title {
                 font-family: 'Bellefair', 'normal';
                 font-size: 32px;
                 line-height: 37px;
                 opacity: .5;
-                margin-top: 120px;
             }
             h1 {
                 font-family: 'Bellefair', 'normal';
@@ -43,6 +47,8 @@
                 color: #D8D6F9;
             }
             .tabs {
+                position: absolute;
+                bottom: 100px;
                 width: 132px;
                 display: flex;
                 justify-content: space-between;
@@ -91,7 +97,7 @@
                 .row:nth-child(3) { order: 4; }
                 .row:nth-child(4) { order: 1; }
                 .title {
-                    margin-top: 32px;
+                    margin-top: 18px;
                     font-size: 16px;
                     line-height: 18px;
                 }
@@ -102,9 +108,10 @@
                 .bio {
                     font-size: 15px;
                     line-height: 25px;
-                    margin-top: 16px;
                 }
                 .tabs {
+                    position: relative;
+                    bottom: 10px;
                     width: 88px;
                     margin-top: 32px;
                     span {
@@ -164,6 +171,8 @@
                     text-align: center;
                 }
                 .tabs {
+                    position: relative;
+                    bottom: 10px;
                     margin-top: 0 !important;
                     span {
                         width: 10px;

@@ -17,7 +17,7 @@ export default function Crew() {
                 </Row>
                 {crew.map((item, index) => {
                     return <Row className={`${member === index? 'd-flex': 'd-none'} align-items-center order-view`} key={index}>
-                        <Col xs={12} lg={{offset: 1, span:4}} xl={{offset: 1, span: 5}} className="content-info">
+                        <Col xs={12} lg={{offset: 1, span:4}} xl={{offset: 1, span: 6}} className="content-info">
                             <Row>
                                 <Col>
                                     <p className="title">{item.role.toUpperCase()}</p>
@@ -29,11 +29,11 @@ export default function Crew() {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs={{offset: 2, span: 8}} sm={{offset: 3, span: 6}} lg={{offset:0, span: 12}} xl={7} className="mt-sm-4">
+                                <Col xs={{offset: 2, span: 8}} sm={{offset: 2, span: 8}} lg={{offset:0, span: 12}} xl={10} className="mt-sm-4">
                                     <p className="bio">{item.bio}</p>
                                 </Col>
                             </Row>
-                            <Row>
+                            <Row className="d-flex align-items-start">
                                 <Col xs={12} className="d-flex justify-content-center justify-content-md-start mt-2 mt-lg-4">
                                     <div className="tabs">
                                         <span className={`${index === 0? 'active': ''}`} onClick={() => setMember(0)}/>
@@ -44,7 +44,7 @@ export default function Crew() {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={{span:8, offset: 0}} sm={12} lg={{offset: 1, span: 5}} xl={4} className="image d-flex justify-content-center image">
+                        <Col xs={{span:8, offset: 0}} sm={12} lg={{offset: 1, span: 5}} xl={1} className="image d-flex justify-content-center image">
                             <img src={require("../assets/crew"+images[index])} alt={item.name} />
                         </Col>
                     </Row>
