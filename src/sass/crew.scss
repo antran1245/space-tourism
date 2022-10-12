@@ -16,8 +16,8 @@
             font-size: 28px;
             line-height: 33.6px;
             letter-spacing: 4.72px;
-            position: relative;
-            top: 50px;
+            position: absolute;
+            top: 212px;
             span {
                 font-weight: 700;
                 opacity: .25;
@@ -46,7 +46,7 @@
                 width: 132px;
                 display: flex;
                 justify-content: space-between;
-                margin-top: 120px;
+                margin-top: 80px;
                 span {
                     height: 15px;
                     width: 15px;
@@ -73,7 +73,7 @@
             margin-top: 120px;
             .headText {
                 margin-top: 0;
-                top: 0;
+                top: 88px;
                 font-size: 20px;
                 line-height: 19.2px;
                 letter-spacing: 2.7px;
@@ -143,6 +143,7 @@
                 letter-spacing: 3.38px;
                 line-height: 24px;
                 align-self: flex-start;
+                top: 136px;
             }
             .content-info {
                 .title {
