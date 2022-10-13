@@ -35,7 +35,7 @@ export default function Navigation() {
                         <Link to="/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
                         <Link to="/destination" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Link>
                         <Link to="/crew" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Link>
-                        <Link href="" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
+                        <Link to="/technology" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

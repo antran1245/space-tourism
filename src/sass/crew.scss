@@ -23,11 +23,6 @@
                 opacity: .25;
             }
         }
-        // .order-view {
-        //     display: flex;
-        //     align-items: center;
-        //     justify-items: center;
-        // }
         .content-info {
             .title {
                 font-family: 'Bellefair', 'normal';
@@ -137,7 +132,8 @@
 // tablet
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     #crew {
-        overflow: hidden;
+        background: url('../assets/crew/background-crew-tablet.jpg') no-repeat center center;
+        background-size: 100% 100%;
         .col-12{
             display: flex;
             flex-direction: column;
