@@ -34,10 +34,10 @@ export default function Navigation() {
                     <Navbar.Collapse id="responsive-nav" className={`navLink justify-content-end mt-2 mt-md-0`}>
                         <div id='line-bar' className='d-none d-lg-inline'/>
                         <Nav className='d-flex justify-content-around align-items-center'>
-                            <Link to="/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
-                            <Link to="/destination" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Link>
-                            <Link to="/crew" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Link>
-                            <Link to="/technology" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
+                            <Link to="/space-tourism/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
+                            <Link to="/space-tourism/destination" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Link>
+                            <Link to="/space-tourism/crew" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Link>
+                            <Link to="/space-tourism/technology" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -50,10 +50,10 @@ export default function Navigation() {
                     </div>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                            <Link to="/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
-                            <Link to="/destination" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Link>
-                            <Link to="/crew" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Link>
-                            <Link to="/technology" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
+                            <Link to="/space-tourism/" className={`${selected === 0 ? 'active' : ''}`} onClick={() => setSelected(0)}><span>00</span> HOME</Link>
+                            <Link to="/space-tourism/destination" className={`${selected === 1 ? 'active' : ''}`} onClick={() => setSelected(1)}><span>01</span> DESTINATION</Link>
+                            <Link to="/space-tourism/crew" className={`${selected === 2 ? 'active' : ''}`} onClick={() => setSelected(2)}><span>02</span> CREW</Link>
+                            <Link to="/space-tourism/technology" className={`${selected === 3 ? 'active' : ''}`} onClick={() => setSelected(3)}><span>03</span> TECHNOLOGY</Link>
                 </Offcanvas.Body>
             </Offcanvas>
         </>

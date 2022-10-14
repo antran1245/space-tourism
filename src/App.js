@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <Navigation/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='destination' element={<Destination/>}/>
-        <Route path='crew' element={<Crew/>}/>
-        <Route path='technology'  element={<Technology />}/>
+        <Route path='space-tourism/' element={<Home/>}/>
+        <Route path='space-tourism/destination' element={<Destination/>}/>
+        <Route path='space-tourism/crew' element={<Crew/>}/>
+        <Route path='space-tourism/technology'  element={<Technology />}/>
       </Routes>
     </BrowserRouter>
   );

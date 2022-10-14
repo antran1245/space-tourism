@@ -8,6 +8,11 @@ Create a website from the design of [**Frontend Mentor**](https://www.frontendme
 
 Website providing details about space destinations, crew members, and technologies.
 
+## Live Link Github Pages
+
+
+[Space Tourism](https://antran1245.github.io/space-tourism/)
+
 ### Challenges
 
 - **Main Challenge**: Your challenge is to build out this multi-page space tourism website and get it looking as close to the design as possible.
@@ -41,6 +46,7 @@ or
 - React
 - React-Bootstrap
 - react-router-dom
+- gh-pages
 
 ## Features
 - Toggles information display
