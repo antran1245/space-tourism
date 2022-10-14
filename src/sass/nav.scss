@@ -66,22 +66,76 @@
 }
 
 // Tablet and phone
-@media only screen and (max-width: 768px) {
-    .container-fluid {
-        .open {
-            animation: open .25s ease-in forwards;
-        }
-        .closed {
-            animation: closed .25s ease-out forwards;
-        }
-        #responsive-nav {
-            .navbar-nav {
-                width: 100% !important;
+// @media only screen and (max-width: 768px) {
+//     .container-fluid {
+//         .open {
+//             animation: open .25s ease-in forwards;
+//         }
+//         .closed {
+//             animation: closed .25s ease-out forwards;
+//         }
+//         #responsive-nav {
+//             .navbar-nav {
+//                 width: 100% !important;
+//             }
+//         }
+//     }
+// }
+@media only screen and (max-width: 992px) {
+    #offcanvas {
+        background-color: rgba(255,255,255,0.04);
+        backdrop-filter: blur(40.7742px);
+        font-family: 'Barlow Condensed', 'normal';
+        .offcanvas-header {
+            justify-content: end;
+            .close {
+                margin-top: 33.95px;
+                width: 19.09px;
+                height: 19.09px;
+                cursor: pointer;
+                div {
+                    width: 24px;
+                    height: 3px;
+                    background-color: #D0D6F9;
+                }
+                div:nth-child(1) {
+                    transform: rotate(-45deg) translate(-35%, 100%);
+                }
+                div:nth-child(2) {
+                    transform: rotate(45deg) translate(10%, 180%);
+                }
             }
         }
-
+        .offcanvas-body {
+            margin-top: 64.95px;
+            padding-right: 0;
+            display: flex;
+            flex-direction: column;
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+                margin-bottom: 32px;
+                margin-left: 32px;
+                height: 31px;
+                display: flex;
+                align-items: center;
+                span {
+                    font-weight: 700;
+                    margin-right: 11px;
+                }
+                &:hover, &.active {
+                    border-right: 4px solid #FFFFFF;
+                }
+            }
+        }
     }
 }
+
+
 // Phone size
 @media only screen and (max-width: 600px) {
     #navigation {
