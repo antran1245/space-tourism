@@ -66,21 +66,6 @@
 }
 
 // Tablet and phone
-// @media only screen and (max-width: 768px) {
-//     .container-fluid {
-//         .open {
-//             animation: open .25s ease-in forwards;
-//         }
-//         .closed {
-//             animation: closed .25s ease-out forwards;
-//         }
-//         #responsive-nav {
-//             .navbar-nav {
-//                 width: 100% !important;
-//             }
-//         }
-//     }
-// }
 @media only screen and (max-width: 992px) {
     #offcanvas {
         background-color: rgba(255,255,255,0.04);
@@ -89,7 +74,8 @@
         .offcanvas-header {
             justify-content: end;
             .close {
-                margin-top: 33.95px;
+                margin-top: 28px;
+                margin-right: 32px;
                 width: 19.09px;
                 height: 19.09px;
                 cursor: pointer;
