@@ -36,7 +36,7 @@ export default function Technology() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col md={{offset: 3, span: 6}} lg={{offset: 0, span: 10}} xxl={{offset: 0, span: 8}}>
+                            <Col xs={{offset: 2, span: 8}} md={{offset: 3, span: 6}} lg={{offset: 0, span: 10}} xxl={{offset: 0, span: 8}}>
                                 <p className="description">{technology[0].description}</p>
                             </Col>
                         </Row>

@@ -75,8 +75,44 @@
     }
 }
 
-@media only screen and (max-width: 600px) {}
+// Phone
+@media only screen and (max-width: 600px) {
+    #technology {
+        .content {
+            top: 88px;
+            .headText {
+                text-align: center;
+                font-size: 16px;
+            }
+            .content-info {
+                .tabs {
+                    div {
+                        width: 40px;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                }
+                .info {
+                    .title {
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 2.3625px;
+                    }
+                    .heading {
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                    .description {
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
 
+// Tablet
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     #technology {
         .content {
@@ -87,9 +123,26 @@
                 letter-spacing: 3.38px;
             }
             .content-info {
-                .landscape {
-                    // margin-top: 60px;
+                .info {
+                    .heading {
+                        font-size: 40px;
+                        line-height: 46px;
+                    }
+                    .description {
+                        font-size: 16px;
+                        line-height: 28px;
+                        margin-bottom: 0;
+                    }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #technology {
+        .content {
+            .content-info {
                 .tabs {
                     margin-top: 56px;
                     flex-direction: row;
@@ -101,15 +154,6 @@
                 .info {
                     margin-top: 0;
                     text-align: center;
-                    .heading {
-                        font-size: 40px;
-                        line-height: 46px;
-                    }
-                    .description {
-                        font-size: 16px;
-                        line-height: 28px;
-                        margin-bottom: 0;
-                    }
                 }
             }
         }
