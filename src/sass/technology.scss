@@ -11,6 +11,7 @@
         min-width: 100%;
         position: absolute;
         top: 212px;
+        overflow-x: hidden;
         .headText {
             font-size: 28px;
             line-height: 34px;
@@ -63,6 +64,52 @@
                     line-height: 32px;
                     color: #D0D6F9;
                     font-family: 'Barlow', 'normal';
+                }
+            }
+            .landscape {
+                min-width: 100%;
+                width: auto;
+                height: 310px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    #technology {
+        .content {
+            top: 136px;
+            .headText {
+                font-weight: 20px;
+                line-height: 24px;
+                letter-spacing: 3.38px;
+            }
+            .content-info {
+                .landscape {
+                    // margin-top: 60px;
+                }
+                .tabs {
+                    margin-top: 56px;
+                    flex-direction: row;
+                    justify-content: center;
+                    div {
+                        margin-right: 16px;
+                    }
+                }
+                .info {
+                    margin-top: 0;
+                    text-align: center;
+                    .heading {
+                        font-size: 40px;
+                        line-height: 46px;
+                    }
+                    .description {
+                        font-size: 16px;
+                        line-height: 28px;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
