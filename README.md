@@ -2,7 +2,7 @@
 
 Create a website from the design of [**Frontend Mentor**](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
 
-## Frontend Mentor
+## <ins>Frontend Mentor</ins>
 
 ### Website
 
@@ -23,7 +23,7 @@ Website providing details about space destinations, crew members, and technologi
 - `assets` folder with images for website
 - `*.html` files of what the layout of the website.
 
-## Technologies
+## <ins>Technologies</ins>
 
 ### Run
 `yarn start`
@@ -37,18 +37,49 @@ or
 - HTML
 - CSS
 
-### Library/Frameworks
+### Library/Frameworks/Packages
 - React
 - React-Bootstrap
+- react-router-dom
 
 ## Features
 - Toggles information display
 - Navigation between pages
+- Sidebar on mobile screen size
+- Hover effect on tabs and navbar
 
-## Challenges
+## <ins>Challenges</ins>
 - dynamically adding images from json file into img tags src.
     - Example: `"./assets/destination/image-moon.png"`
-    - created a separate array just for the images
-    - slice the images path name to only include the image file name
-        - ['/image-moon.png', ... ]
-    - `src={require(PATH + IMAGE Name)}` PATH = the path to the image
+    - Situation: the webpack that comes with create-react-app does not allow the image string to be used as it is. 
+    - Solution: Break the string into the url path to the image and the image name.
+        - Created a separate array just for the images
+        - Slice the images path name to only include the image file name
+            - `['/image-moon.png', ... ]`
+        - `src={require(PATH + IMAGE Name)}` PATH = the path to the image
+
+# Images
+
+**Home**
+
+<img src="./screenshots/home.png" width="450" height="250">
+<img src="./screenshots/home_active.jpg" width="450" height="250">
+<img src="./screenshots/mobile_home.png" width="175" height="250">
+
+**Destination**
+
+<img src="./screenshots/destination.jpg" width="450" height="250">
+
+**Crew**
+
+<img src="./screenshots/crew.png" width="450" height="250">
+<img src="./screenshots/crew_active.png" width="300" height="250">
+
+**Technology**
+
+<img src="./screenshots/technology_active.jpg" width="450" height="250">
+<img src="./screenshots/tablet_technology.png" width="225" height="250">
+
+**Sidebar**
+
+<img src="./screenshots/Sidebar.jpg" width="175" height="250">
